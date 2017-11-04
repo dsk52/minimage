@@ -1,0 +1,8 @@
+.c-global-footer {
+  margin-top: 20px;
+  padding: 1rem 0 2rem;
+
+  &__inner {
+    @extend %clearfix;
+  }
+}

@@ -5,10 +5,12 @@
 @import 'vender/*';
 
 @import '_variables';
+@import "foundation/_base";
 @import "foundation/_fonts";
 @import "_mixin";
 @import "_placeholder";
 
+@import "layout/*";
 @import "object/component/*";
 @import "object/project/*";
 @import "object/utility/*";

@@ -5,9 +5,14 @@ $document-width--large: $document-width--medium;
 $document-width--xlarge: $document-width--medium;
 
 // Color
-$color-primary: #000000;
-$color-secondary: #ffffff;
+$color-primary: #ffffff;
 
+$color-font-base: #383838;
+$color-font-white: #f6f6f6;
+
+$font-base-size: 16px;
+
+$border-base-color: #383838;
 
 // Breakpoints
 $breakpoints: (
