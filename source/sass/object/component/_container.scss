@@ -1,0 +1,20 @@
+.c-container {
+  max-width: $document-width--xlarge;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mq('large') {
+    max-width: $document-width--large;
+  }
+
+  @include mq('medium') {
+    max-width: $document-width--medium;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include mq('small') {
+    max-width: $document-width--small;
+  }
+}

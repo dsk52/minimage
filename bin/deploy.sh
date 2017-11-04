@@ -24,7 +24,7 @@ config.js
 node_modules
 tasks
 package.json
-src
+source
 config.toml
 !/exampleSite/config.toml
 !/exampleSite/content
