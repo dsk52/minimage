@@ -1,0 +1,33 @@
+# minimage
+minimage is a [Hugo](https://gohugo.io) theme.
+
+## Feature
+
+## Get the Theme
+Inside the folder of your Hugo site run:
+
+```
+$ cd themes
+$ git clone https://github.com/d-kusk/minimage.git
+```
+
+For more information read the official [setup guide](https://gohugo.io/overview/installing/) of Hugo.
+
+## Preview your site locally
+Use Hugo’s built-in server to see your site in action as you make changes.
+
+```
+$ hugo server -t minimage
+```
+
+Visit ``localhost:1313`` in your browser.
+
+## Write your new blog posts
+To create a new blog post, run:
+
+```
+$ hugo new post/your-post-name.md
+```
+
+## License
+This theme is released under the [MIT license](https://github.com/d-kusk/minimage/blob/master/LICENSE.md)
