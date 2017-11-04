@@ -1,0 +1,19 @@
+<li class="c-archive-list__item">
+  <a class="c-post c-bg-img" style="background-image: url('http://placehold.jp/768x164.png')" href="{{ .Permalink }}">
+    <header class="c-post__header c-post__header--over-img">
+      <p class="c-post__title">{{ .Title }}</p>
+      <div class="c-post__header__meta">
+        <time class="c-pub-time" datetime="{{ .Date.Format " 2006-01-02T15:04:05Z07:00 " | safeHTML }}">
+          {{ .Lastmod.Format ( .Site.Params.dateformat | default "2006.01.02") }}
+        </time>
+        {{ if .Params.tags }}
+        <div class="c-tag">
+          {{ range .Params.tags }}
+          <span class="c-tag__item">{{ . }}</span>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </header>
+  </a>
+</li>

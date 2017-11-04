@@ -1,0 +1,15 @@
+.c-post {
+  display: block;
+  text-decoration: none;
+  background-color: #b9b9b9;
+  max-height: 164px;
+
+  &__header {
+    padding: 20px;
+  }
+
+  &__title {
+    font-size: 28px;
+    color: $color-font-white;
+  }
+}

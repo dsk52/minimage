@@ -1,0 +1,18 @@
+.c-tag {
+  display: inline-block;
+  margin-left: 0.6em;
+
+  &__item {
+    text-decoration: none;
+    font-size: 15px;
+    color: $color-font-white;
+
+    &::after {
+      content: ',';
+    }
+
+    &:last-of-type::after {
+      content: '';
+    }
+  }
+}
