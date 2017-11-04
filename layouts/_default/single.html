@@ -1,0 +1,30 @@
+{{ define "main" }}
+  <div class="p-single">
+    <div class="c-container">
+      <article class="c-post">
+        <header class="c-post__header c-post__header--over-img">
+          <p class="c-post__title">{{ .Title }}</p>
+          <div class="c-post__header__meta">
+            <time class="c-pub-time" datetime="{{ .Date.Format " 2006-01-02T15:04:05Z07:00 " | safeHTML }}">
+              {{ .Lastmod.Format ( .Site.Params.dateformat | default "2006.01.02") }}
+            </time>
+            {{ if .Params.tags }}
+            <div class="c-tag">
+              {{ range .Params.tags }}
+              <span class="c-tag__item">{{ . }}</span>
+              {{ end }}
+            </div>
+            {{ end }}
+          </div>
+        </header>
+        <div class="c-post__body">
+          {{ .Content }}
+        </div>
+
+        <footer class="c-post__footer">
+          {{ partial "share.html" }}
+        </footer>
+      </article>
+    </div>
+  </div>
+{{ end }}

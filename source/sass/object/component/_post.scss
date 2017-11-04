@@ -1,15 +1,58 @@
 .c-post {
   display: block;
   text-decoration: none;
-  background-color: #b9b9b9;
-  max-height: 164px;
+  background-color: #b9b9b9;  // 画像が入るまでの仮
 
-  &__header {
-    padding: 20px;
-  }
+  &__header {}
 
   &__title {
     font-size: 28px;
     color: $color-font-white;
+  }
+
+  &__body {
+    margin-top: 30px;
+
+    * + * {
+      margin-top: 1rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    h3 {
+      font-size: 1.6rem;
+    }
+
+    h4 {
+      font-size: 1.4rem;
+    }
+
+    h5 {
+      font-size: 1.2rem;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    pre {
+      width: 94%;
+      margin: 1rem auto 0;
+      padding: 1em;
+      background-color: #242424;
+
+      code {
+        width: inherit;
+        color: $color-font-white;
+      }
+    }
+
+    blockquote {
+      padding: 0 1em;
+      border-left: 4px solid $color-medium-grey;
+      color: $color-medium-grey;
+    }
   }
 }
