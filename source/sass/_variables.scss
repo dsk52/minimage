@@ -1,8 +1,8 @@
 // Size
 $document-width--small: 300px;
 $document-width--medium: 768px;
-$document-width--large: 1000px;
-$document-width--xlarge: 1200px;
+$document-width--large: $document-width--medium;
+$document-width--xlarge: $document-width--medium;
 
 // Color
 $color-primary: #000000;
@@ -14,7 +14,7 @@ $breakpoints: (
   'small': 'screen and (max-width: #{$document-width--small})',
   'medium': 'screen and (max-width: #{$document-width--medium})',
   'large': 'screen and (max-width: #{$document-width--large})',
-  'xlarge': 'screen and (max-width: #{$document-width--xlarge})',
+  // 'xlarge': 'screen and (max-width: #{$document-width--xlarge})',
 ) !default;
 
 

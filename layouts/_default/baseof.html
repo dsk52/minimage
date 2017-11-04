@@ -1,0 +1,13 @@
+{{ partial "head" . }}
+
+<body>
+  {{ partial "header" . }}
+
+  <main class="main-content">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  {{ partial "footer" . }}
+</body>
+
+</html>

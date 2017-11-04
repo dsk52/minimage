@@ -1,0 +1,14 @@
+{{ define "main" }}
+  {{ $pag := .Paginate (where .Data.Pages "Type" "post") 6 }}
+
+  <div class="p-archive">
+    <div class="c-container">
+      <ul class="c-archive-list">
+      {{ range $pag.Pages }}
+        {{ .Render "li" }}
+      {{ end }}
+      </ul>
+    </div>
+  </div>
+
+{{ end }}
