@@ -23,6 +23,9 @@ $ git clone https://github.com/d-kusk/minimage.git
 
 For more information read the official [setup guide](https://gohugo.io/overview/installing/) of Hugo.
 
+## How to set up
+Please refer [here](https://github.com/d-kusk/minimage/blob/master/exampleSite/config.toml) for setting.
+
 ## Preview your site locally
 Use Hugo’s built-in server to see your site in action as you make changes.
 
