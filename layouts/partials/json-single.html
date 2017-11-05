@@ -10,9 +10,9 @@
     "publisher": {
       "@type": "Organization",
       "name": "{{ .Site.Params.author }}",
-      "logo": ""
+      "logo": "{{ .Site.BaseURL }}{{ .Site.Params.logo }}",
     },
-    "image": "",
+    "image": "{{ .Site.BaseURL }}{{ .Params.image }}",
     "datePublished": "{{ .Date.Format "2006-01-02" }}"
   },
   "headline": "{{ substr (replace (.Content) "\n" "") 0 110 }}",
