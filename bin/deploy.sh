@@ -24,6 +24,7 @@ config.js
 node_modules
 tasks
 package.json
+package-lock.json
 source
 config.toml
 !/exampleSite/config.toml
