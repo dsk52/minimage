@@ -1,0 +1,14 @@
+{{ define "main" }}
+
+<div class="taxonomy">
+  <ul class="taxonomy-list">
+    {{ $data := .Data }}
+    {{ range $key, $value := .Data.Terms }}
+      <li class="taxonomy-list-item">
+        <a href="/{{ $data.Plural }}/{{ $key | urlize }}">{{ $key }}</a><span>({{ len $value }})</span>
+      </li>
+    {{ end }}
+  </ul>
+</div>
+
+{{ end }}

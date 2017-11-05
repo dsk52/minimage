@@ -1,0 +1,9 @@
+.c-thumb {
+  margin-top: 40px;
+
+  &::after {
+    display: block;
+    content: '';
+    padding-top: percentage(164px / $document-width--medium);
+  }
+}
