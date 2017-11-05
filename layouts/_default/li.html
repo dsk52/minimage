@@ -1,5 +1,5 @@
 <li class="c-archive-list__item">
-  <a class="c-post{{ if .Params.image }} c-post--has-thumb c-bg-img{{end}}" style="background-image: url('{{ .Params.image }}')" href="{{ .Permalink }}">
+  <a class="c-post{{ if .Params.image }} c-post--has-thumb c-bg-img{{end}}" {{ if .Params.image }}style="background-image: url('{{ .Params.image | absURL }}')"{{ end }} href="{{ .Permalink }}">
     <header class="c-post__header c-post__header--over-img">
       <p class="c-post__title">{{ .Title }}</p>
       <div class="c-post__header__meta">
