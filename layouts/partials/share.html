@@ -1,7 +1,7 @@
 <aside class="c-share">
   <h2 class="c-share__title">Share</h2>
   <div class="c-share__list">
-    <a href="#" class="c-share__list__item">
+    <a class="c-share__list__item c-link" href="http://twitter.com/intent/tweet?text={{ .Title }}%20%7C%20{{ .Site.Title }}%20{{ .Permalink }}" target="_blank">
       <svg class="icon icon-twitter">
         <use xlink:href="#icon-twitter"></use>
         <symbol id="icon-twitter" viewBox="0 0 32 32">
@@ -10,12 +10,23 @@
         </symbol>
       </svg>
     </a>
-    <a href="#" class="c-share__list__item">
+
+    <a class="c-share__list__item c-link" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank">
       <svg class="icon icon-facebook">
         <use xlink:href="#icon-facebook"></use>
         <symbol id="icon-facebook" viewBox="0 0 32 32">
           <title>facebook</title>
           <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path>
+        </symbol>
+      </svg>
+    </a>
+
+    <a class="c-share__list__item" href="http://getpocket.com/edit?url={{ .Permalink }}" target="_blank">
+      <svg class="icon icon-get-pocket">
+        <use xlink:href="#icon-get-pocket"></use>
+        <symbol id="icon-get-pocket" viewBox="0 0 27 28">
+          <title>get-pocket</title>
+          <path d="M24.453 2c1.359 0 2.422 1.094 2.422 2.438v8.109c0 7.484-5.984 13.453-13.422 13.453-7.469 0-13.453-5.969-13.453-13.453v-8.109c0-1.328 1.109-2.438 2.438-2.438h22.016zM13.453 18.625c0.469 0 0.938-0.187 1.281-0.516l6.312-6.062c0.359-0.344 0.578-0.828 0.578-1.328 0-1.016-0.828-1.844-1.844-1.844-0.484 0-0.938 0.187-1.281 0.516l-5.047 4.844-5.047-4.844c-0.344-0.328-0.797-0.516-1.266-0.516-1.016 0-1.844 0.828-1.844 1.844 0 0.5 0.203 0.984 0.562 1.328l6.328 6.062c0.328 0.328 0.797 0.516 1.266 0.516z"></path>
         </symbol>
       </svg>
     </a>

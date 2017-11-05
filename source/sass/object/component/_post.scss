@@ -55,4 +55,14 @@
       color: $color-medium-grey;
     }
   }
+
+
+  &__footer {
+    margin-top: 40px;
+    border-top: 1px solid $border-base-color;
+
+    > * + * {
+      margin-top: 20px;
+    }
+  }
 }
