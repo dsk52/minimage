@@ -8,6 +8,11 @@ minimage is a [Hugo](https://gohugo.io) theme.
 
 ## Feature
 
+- Responsive
+- JSON-LD
+- Support for tags and thumbnail
+- Google Analytics
+
 ## Get the Theme
 Inside the folder of your Hugo site run:
 

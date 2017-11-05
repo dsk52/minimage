@@ -1,0 +1,21 @@
+baseurl = "Your Site URL"
+languageCode = "Your language code"
+title = "Your Site Name"
+copyright = "Your Site copyright"
+canonifyurls = true
+paginate = 3
+
+googleAnalytics = "Yout Google Analytics ID"
+
+[params]
+  description = "Your site description"
+  author = "Your Name"
+  logo = '/image/logo.png'
+
+[taxonomies]
+  tag = "tags"
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
