@@ -1,0 +1,14 @@
+.p-single {
+  .c-post__title,
+  .c-pub-time,
+  .c-tag__item {
+    color: $color-font-base;
+  }
+
+  .c-thumb {
+    &:hover {
+      background-size: 100%;
+      opacity: 1;
+    }
+  }
+}

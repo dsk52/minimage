@@ -1,0 +1,15 @@
+.c-share {
+  margin-top: 40px;
+
+  &__list {
+    margin-top: 10px;
+
+    &__item {
+      text-decoration: none;
+
+      & + & {
+        margin-left: 0.5em;
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
 // Size
-$document-width--small: 300px;
+$document-width--small: 320px;
 $document-width--medium: 768px;
 $document-width--large: $document-width--medium;
 $document-width--xlarge: $document-width--medium;
@@ -9,10 +9,12 @@ $color-primary: #ffffff;
 
 $color-font-base: #383838;
 $color-font-white: #f6f6f6;
+$color-grey: #a0a0a0;
+$color-medium-grey: #b9b9b9;
 
 $font-base-size: 16px;
 
-$border-base-color: #383838;
+$border-base-color: $color-grey;
 
 // Breakpoints
 $breakpoints: (

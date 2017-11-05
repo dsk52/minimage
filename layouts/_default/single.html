@@ -1,0 +1,48 @@
+{{ define "main" }}
+  <div class="p-single">
+    <div class="c-container">
+      <article class="c-post">
+        <header class="c-post__header">
+          <h1 class="c-post__title">{{ .Title }}</h1>
+          <div class="c-post__header__meta">
+            <time class="c-pub-time" datetime="{{ .Date.Format " 2006-01-02T15:04:05Z07:00 " | safeHTML }}">
+              {{ .Lastmod.Format ( .Site.Params.dateformat | default "2006.01.02") }}
+            </time>
+            {{ if .Params.tags }}
+            <div class="c-tag">
+              {{ range .Params.tags }}
+              <a class="c-tag__item c-link" href="{{ " /tags/ " | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+              {{ end }}
+            </div>
+            {{ end }}
+          </div>
+          {{ if .Params.image }}
+          <div class="c-thumb c-bg-img" style="background-image: url('{{ .Params.image }}')"></div>
+          {{ end }}
+        </header>
+        <div class="c-post__body">
+          {{ .Content }}
+        </div>
+
+        <footer class="c-post__footer">
+          {{ partial "share.html" }}
+
+          <div class="c-pager">
+            <ul class="c-pager__list">
+              {{ if .PrevInSection }}
+              <li class="c-pager__list__item c-pager__list__item--prev">
+                <a class="c-link" href="{{ .PrevInSection.Permalink }}" data-toggle="tooltip" data-placement="top" title="{{ .PrevInSection.Title }}">&larr; Previous Post</a>
+              </li>
+              {{ end }} {{ if .NextInSection }}
+              <li class="c-pager__list__item c-pager__list__item--next">
+                <a class="c-link" href="{{ .NextInSection.Permalink }}" data-toggle="tooltip" data-placement="top" title="{{ .NextInSection.Title }}">Next Post &rarr;</a>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+        </footer>
+        {{ partial "json-single.html" }}
+      </article>
+    </div>
+  </div>
+{{ end }}

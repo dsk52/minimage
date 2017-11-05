@@ -1,0 +1,23 @@
+.c-pager {
+  margin-top: 40px !important;
+
+  &__list {
+    @extend %clearfix;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+
+    &__item {
+      width: 49%;
+
+      &--prev {
+        float: left;
+      }
+
+      &--next {
+        float: right;
+        text-align: right;
+      }
+    }
+  }
+}
