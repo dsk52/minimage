@@ -6,7 +6,9 @@
   }
 
   .c-thumb {
-    background-size: 100%;
-    opacity: 1;
+    &:hover {
+      background-size: 100%;
+      opacity: 1;
+    }
   }
 }
