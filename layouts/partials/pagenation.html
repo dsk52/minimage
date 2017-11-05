@@ -1,0 +1,15 @@
+{{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
+<div class="c-pager">
+  <ul class="c-pager__list">
+    {{ if .Paginator.HasPrev }}
+    <li class="c-pager__list__item c-pager__list__item--prev">
+      <a class="c-link" href="{{ .URL }}page/{{ .Paginator.Prev.PageNumber }}">&larr; Newer Posts</a>
+    </li>
+    {{ end }} {{ if .Paginator.HasNext }}
+    <li class="c-pager__list__item c-pager__list__item--next">
+      <a class="c-link" href="{{ .URL }}page/{{ .Paginator.Next.PageNumber }}">Older Posts &rarr;</a>
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}

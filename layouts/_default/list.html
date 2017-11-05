@@ -1,5 +1,5 @@
 {{ define "main" }}
-  {{ $pag := .Paginate (where .Data.Pages "Type" "post") 6 }}
+  {{ $pag := .Paginate (where .Data.Pages "Type" "post") 3 }}
 
   <div class="p-archive">
     <div class="c-container">
@@ -8,6 +8,8 @@
         {{ .Render "li" }}
       {{ end }}
       </ul>
+
+      {{ partial "pagenation.html" . }}
     </div>
   </div>
 

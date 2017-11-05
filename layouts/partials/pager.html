@@ -1,0 +1,13 @@
+<div class="c-pager">
+  <ul class="c-pager__list">
+    {{ if .PrevInSection }}
+    <li class="c-pager__list__item c-pager__list__item--prev">
+      <a class="c-link" href="{{ .PrevInSection.Permalink }}" data-toggle="tooltip" data-placement="top" title="{{ .PrevInSection.Title }}">&larr; Previous Post</a>
+    </li>
+    {{ end }} {{ if .NextInSection }}
+    <li class="c-pager__list__item c-pager__list__item--next">
+      <a class="c-link" href="{{ .NextInSection.Permalink }}" data-toggle="tooltip" data-placement="top" title="{{ .NextInSection.Title }}">Next Post &rarr;</a>
+    </li>
+    {{ end }}
+  </ul>
+</div>
