@@ -10,30 +10,12 @@ if [[ "develop" != "$TRAVIS_BRANCH" ]]; then
 	exit
 fi
 
-rm -rf .git
-rm -r .gitignore
+git checkout -b review
 
-echo ".editorconfig
-.travis.yml
-.gitignore
-bin
-.babelrc
-webpack.config.babel.js
-gulpfile.babel.js
-config.js
-node_modules
-tasks
-package.json
-package-lock.json
-source
-config.toml
-!/exampleSite/config.toml
-!/exampleSite/content
-!/exampleSite/static" > .gitignore
+git rm -r .editorconfig .travis.yml .gitignore package.json package-lock.json .babelrc webpack.config.babel.js gulpfile.babel.js config.js
 
-git init
 git config user.name "Travis CI"
 git config user.email "travis@example.com"
-git add .
+git add -A
 git commit --quiet -m "Deploy from travis"
-git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master > /dev/null 2>&1
+git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" review > /dev/null 2>&1
