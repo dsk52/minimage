@@ -19,5 +19,5 @@ rm -rf .editorconfig .travis.yml package.json package-lock.json .babelrc webpack
 git config user.name "Travis CI"
 git config user.email "travis@example.com"
 git add -A
-git commit --quiet -m "Deploy from travis"
+git commit --quiet -m "remove development files"
 git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" review > /dev/null 2>&1
