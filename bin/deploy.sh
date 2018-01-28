@@ -12,7 +12,9 @@ fi
 
 git checkout -b review
 
-git rm -r .editorconfig .travis.yml .gitignore package.json package-lock.json .babelrc webpack.config.babel.js gulpfile.babel.js config.js
+git checkout .
+rm -rf node_modules/ tasks/ source/
+rm -rf .editorconfig .travis.yml package.json package-lock.json .babelrc webpack.config.babel.js gulpfile.babel.js config.js .gitignore
 
 git config user.name "Travis CI"
 git config user.email "travis@example.com"

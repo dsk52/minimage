@@ -31,7 +31,7 @@ gulp.task('sass', () => {
     browsers: config.browsers,
     cascade: false
   }))
-  .pipe(cleancss())
+  // .pipe(cleancss())
   .pipe(gulp.dest(config.build.stylesheets));
 
 });
