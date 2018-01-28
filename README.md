@@ -42,8 +42,6 @@ To create a new blog post, run:
 $ hugo new post/your-post-name.md
 ```
 
-## Older version & Change Log
-If you want to see the older version and the change log, you can look at the [develop](https://github.com/d-kusk/minimage/tree/develop) branch.
 
 ## License
 This theme is released under the [MIT license](https://github.com/d-kusk/minimage/blob/master/LICENSE.md)
