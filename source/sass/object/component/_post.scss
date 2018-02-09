@@ -16,6 +16,10 @@
       height: 100%;
       vertical-align: middle;
     }
+
+    &__meta {
+      margin-top: 0.4em;
+    }
   }
 
   &__title {
@@ -30,25 +34,27 @@
   }
 
   &__body {
-    margin-top: 30px;
+    margin-top: 4rem;
 
     * + * {
-      margin-top: 1rem;
+      margin-top: 0.8rem;
     }
 
     h2 {
+      margin-top: 2rem;
       line-height: 1.4;
       font-size: 1.5rem;
     }
 
     h3 {
+      margin-top: 1.4rem;
       line-height: 1.4;
       font-size: 1.4rem;
     }
 
     h4,
     h5 {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
     }
 
     img {
@@ -56,10 +62,9 @@
     }
 
     pre {
-      width: 94%;
-      margin: 1rem auto 0;
+      margin: 1.6rem 1.2rem;
       padding: 1em;
-      background-color: #242424;
+      background-color: #383737;
       overflow: auto;
       white-space: pre-wrap;
       word-wrap: break-word;
@@ -71,9 +76,18 @@
     }
 
     blockquote {
+      margin: 1.6rem 1.2rem;
       padding: 0 1em;
       border-left: 4px solid $color-medium-grey;
       color: $color-medium-grey;
+    }
+
+    a {
+      color: #3779cc;
+
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 

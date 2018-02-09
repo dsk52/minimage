@@ -4,8 +4,13 @@
   margin: 0;
 
   &__item {
+    transition: 0.3s $ease-out-quart 0s;
     & + & {
       margin-top: 20px;
+    }
+
+    &:hover {
+      background-color: #eeeeee;
     }
   }
 }
