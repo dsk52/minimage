@@ -10,9 +10,6 @@ if [[ "develop" != "$TRAVIS_BRANCH" ]]; then
 	exit
 fi
 
-git checkout -b review
-
-git checkout .
 rm -rf node_modules/ tasks/ source/
 rm -rf .editorconfig .travis.yml package.json package-lock.json .babelrc webpack.config.babel.js gulpfile.babel.js config.js .gitignore
 
