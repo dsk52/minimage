@@ -1,7 +1,7 @@
 {{ $related := .Site.RegularPages.Related . | first 5 }}
 {{ with $related }}
 <nav class="related-articles js-related-articles">
-  <h2 class="related-articles__text">関連記事</h2>
+  <h2 class="related-articles__text">Related Content</h2>
   <ul class="related-articles__links">
     {{ range . }}
     <li class="related-articles__links__item js-items">
