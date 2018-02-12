@@ -216,6 +216,24 @@ button {
   font-size: 15px;
   color: #494949; }
 
+.related-articles__links {
+  list-style-type: none;
+  padding-left: 0; }
+  .related-articles__links__item {
+    margin-top: 2em; }
+
+.related-article__link {
+  text-decoration: none;
+  font-size: 20.8px;
+  color: #494949; }
+
+.related-article__tags__item {
+  font-size: 12.8px; }
+  .related-article__tags__item + .related-article__tags__item::before {
+    content: ',';
+    display: inline-block;
+    vertical-align: middle; }
+
 .c-share {
   margin-top: 40px; }
   .c-share__list {
