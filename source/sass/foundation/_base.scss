@@ -2,7 +2,7 @@ html,
 body {
   background-color: $color-primary;
   line-height: 1.6;
-  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: $font-gothic;
   font-size: $font-base-size;
   color: $color-font-base;
 }

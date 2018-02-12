@@ -26,7 +26,7 @@ body {
   line-height: 1.6;
   font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
   font-size: 16px;
-  color: #383838; }
+  color: #494949; }
 
 main {
   display: block; }
@@ -84,7 +84,7 @@ button {
   .c-brand a {
     text-decoration: none;
     font-size: 1.6rem;
-    color: #383838; }
+    color: #494949; }
 
 .c-container {
   max-width: 768px;
@@ -107,7 +107,7 @@ button {
 
 .c-description {
   font-size: 14px;
-  color: #787878; }
+  color: #898989; }
 
 /**
  * IcoMoon's SVG Icon
@@ -120,14 +120,14 @@ button {
   height: 1em;
   stroke-width: 0;
   stroke: currentColor;
-  fill: #383838; }
+  fill: #494949; }
 
 .icon-get-pocket {
   width: 0.9599609375em; }
 
 .c-link, .c-brand {
   text-decoration: none;
-  color: #383838;
+  color: #494949;
   transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1) 0s; }
   .c-link:hover, .c-brand:hover {
     opacity: 0.7; }
@@ -163,7 +163,7 @@ button {
     line-height: 1.4;
     font-size: 1.8rem;
     font-weight: 500;
-    color: #383838; }
+    color: #494949; }
     @media screen and (max-width: 768px) {
       .c-post__title {
         font-size: 1.4rem; } }
@@ -172,16 +172,16 @@ button {
     .c-post__body * + * {
       margin-top: 0.8rem; }
     .c-post__body h2 {
-      margin-top: 2rem;
+      margin-top: 2em;
       line-height: 1.4;
       font-size: 1.5rem; }
     .c-post__body h3 {
-      margin-top: 1.4rem;
+      margin-top: 1.8em;
       line-height: 1.4;
       font-size: 1.4rem; }
     .c-post__body h4,
     .c-post__body h5 {
-      font-size: 1.4rem; }
+      font-size: 1.6em; }
     .c-post__body img {
       width: 100%; }
     .c-post__body pre {
@@ -211,7 +211,7 @@ button {
 
 .c-pub-time {
   font-size: 15px;
-  color: #383838; }
+  color: #494949; }
 
 .c-share {
   margin-top: 40px; }
@@ -228,7 +228,7 @@ button {
   .c-tag__item {
     text-decoration: none;
     font-size: 15px;
-    color: #383838; }
+    color: #494949; }
     .c-tag__item::after {
       content: ','; }
     .c-tag__item:last-of-type::after {
@@ -258,7 +258,7 @@ button {
 .p-single .c-post__title,
 .p-single .c-pub-time,
 .p-single .c-tag__item {
-  color: #383838; }
+  color: #494949; }
 
 .p-single .c-thumb:hover {
   background-size: 100%;
