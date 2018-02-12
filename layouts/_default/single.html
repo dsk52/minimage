@@ -11,7 +11,7 @@
             {{ if .Params.tags }}
             <div class="c-tag">
               {{ range .Params.tags }}
-              <a class="c-tag__item c-link" href="{{ " /tags/ " | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+              <a class="c-tag__item c-link" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
               {{ end }}
             </div>
             {{ end }}
