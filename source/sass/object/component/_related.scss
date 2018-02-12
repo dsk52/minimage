@@ -1,0 +1,33 @@
+.related-articles {
+  &__text {}
+
+  &__links {
+    list-style-type: none;
+    padding-left: 0;
+
+    &__item {
+      margin-top: 2em;
+    }
+  }
+}
+
+.related-article {
+  &__link {
+    text-decoration: none;
+    font-size: $font-base-size * 1.3;
+    color: $color-font-base;
+  }
+
+  &__tags {
+
+    &__item {
+      font-size: $font-base-size * 0.8;
+
+      & + &::before {
+        content: ',';
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+}

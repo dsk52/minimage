@@ -1,0 +1,24 @@
+{{ $related := .Site.RegularPages.Related . | first 5 }}
+{{ with $related }}
+<nav class="related-articles js-related-articles">
+  <h2 class="related-articles__text">関連記事</h2>
+  <ul class="related-articles__links">
+    {{ range . }}
+    <li class="related-articles__links__item js-items">
+      <article class="related-article">
+        <p class="related-article__stock">{{ .Date.Format "2006.01.02." }}</p>
+        <p class="related-article__title">
+          <a class="related-article__link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </p>
+        <p class="related-article__tags">
+          {{ range .Params.tags }}
+          <span class="related-article__tags__item">
+            {{ . }}
+          </span>
+          {{ end }} </p>
+      </article>
+    </li>
+    {{ end }}
+  </ul>
+</nav>
+{{ end }}
