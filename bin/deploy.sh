@@ -17,4 +17,9 @@ git config user.name "Travis CI"
 git config user.email "travis@example.com"
 git add -A
 git commit --quiet -m "remove development files"
+
+git checkout -b master
+git pull origin master
+git merge develop
+
 git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master > /dev/null 2>&1
