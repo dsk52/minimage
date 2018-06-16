@@ -197,6 +197,11 @@ button {
       .c-post__body pre code {
         width: 100%;
         color: #f6f6f6; }
+    .c-post__body p > code {
+      color: #f46150;
+      background-color: #efefef;
+      padding: 0.2em 0.4em;
+      font-size: 0.9em; }
     .c-post__body blockquote {
       margin: 1.6rem 1.2rem;
       padding: 0 1em;
@@ -216,11 +221,13 @@ button {
   font-size: 15px;
   color: #494949; }
 
-.related-articles__links {
-  list-style-type: none;
-  padding-left: 0; }
-  .related-articles__links__item {
-    margin-top: 2em; }
+.related-articles {
+  margin-top: 40px; }
+  .related-articles__links {
+    list-style-type: none;
+    padding-left: 0; }
+    .related-articles__links__item {
+      margin-top: 2em; }
 
 .related-article__link {
   text-decoration: none;
