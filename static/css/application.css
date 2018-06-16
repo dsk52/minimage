@@ -189,19 +189,18 @@ button {
       width: 100%; }
     .c-post__body pre {
       margin: 1.6rem 1.2rem;
-      padding: 1em;
       background-color: #383737;
+      padding: 1em;
       overflow: auto;
       white-space: pre-wrap;
       word-wrap: break-word; }
       .c-post__body pre code {
-        width: 100%;
-        color: #f6f6f6; }
-    .c-post__body p > code {
-      color: #f46150;
-      background-color: #efefef;
+        width: 100%; }
+    .c-post__body code {
+      background-color: #383737;
       padding: 0.2em 0.4em;
-      font-size: 0.9em; }
+      font-size: 0.9em;
+      color: #f6f6f6; }
     .c-post__body blockquote {
       margin: 1.6rem 1.2rem;
       padding: 0 1em;
