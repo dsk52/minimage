@@ -1,0 +1,13 @@
+.c-footer-nav {
+  text-align: right;
+
+  &-item {
+    display: inline-block;
+    transition: 0.2s $ease-out-quart 0s;
+    color: $color-font-base;
+
+    &:hover {
+      color: lighten($color-font-base, 10%);
+    }
+  }
+}

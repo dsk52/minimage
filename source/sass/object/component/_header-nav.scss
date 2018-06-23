@@ -1,0 +1,11 @@
+.c-header-nav {
+  &-item {
+    margin-left: 0.4em;
+    text-decoration: none;
+    transition: 0.2s $ease-out-quart 0s;
+
+    &:hover {
+      color: lighten($color-font-base, 20%);
+    }
+  }
+}

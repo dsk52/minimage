@@ -1,5 +1,12 @@
 <footer class="c-global-footer">
   <div class="c-container c-container--medium">
+    <nav class="c-footer-nav">
+      {{ range .Site.Menus.footer }}
+      <a class="c-footer-nav-item" href="{{ .URL }}">
+        {{ .Name }}
+      </a>
+      {{ end }}
+    </nav>
     <p class="c-copy"><small>{{ .Site.Copyright }}</small></p>
   </div>
 </footer>

@@ -7,6 +7,15 @@
         </h1>
         <p class="c-description">{{ .Site.Params.description }}</p>
       </div>
+      <div class="c-global-header__utility">
+        <nav class="c-header-nav">
+          {{ range .Site.Menus.global }}
+          <a class="c-header-nav-item" href="{{ .URL }}">
+            {{ .Name }}
+          </a>
+          {{ end }}
+        </nav>
+      </div>
     </div>
   </div>
 </header>

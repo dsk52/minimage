@@ -40,12 +40,12 @@ button {
 /**
  *
  */
-.c-global-footer__inner, .c-global-header__inner, .c-pager__list {
+.c-global-footer__inner, .c-pager__list {
   zoom: 1; }
-  .c-global-footer__inner:before, .c-global-header__inner:before, .c-pager__list:before, .c-global-footer__inner:after, .c-global-header__inner:after, .c-pager__list:after {
+  .c-global-footer__inner:before, .c-pager__list:before, .c-global-footer__inner:after, .c-pager__list:after {
     content: "";
     display: table; }
-  .c-global-footer__inner:after, .c-global-header__inner:after, .c-pager__list:after {
+  .c-global-footer__inner:after, .c-pager__list:after {
     clear: both; }
 
 .c-global-footer {
@@ -54,6 +54,17 @@ button {
 
 .c-global-header {
   padding: 1em 0; }
+  .c-global-header__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .c-global-header__primary {
+    width: 60%; }
+  .c-global-header__utility {
+    width: 40%; }
 
 .c-main-content {
   margin-top: 40px; }
@@ -111,6 +122,22 @@ button {
 .c-description {
   font-size: 14px;
   color: #898989; }
+
+.c-footer-nav {
+  text-align: right; }
+  .c-footer-nav-item {
+    display: inline-block;
+    transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    color: #494949; }
+    .c-footer-nav-item:hover {
+      color: #636363; }
+
+.c-header-nav-item {
+  margin-left: 0.4em;
+  text-decoration: none;
+  transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1) 0s; }
+  .c-header-nav-item:hover {
+    color: #7c7c7c; }
 
 /**
  * IcoMoon's SVG Icon

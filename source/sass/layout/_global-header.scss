@@ -2,6 +2,15 @@
   padding: 1em 0;
 
   &__inner {
-    @extend %clearfix;
+    display: flex;
+    align-items: center;
+  }
+
+  &__primary {
+    width: 60%;
+  }
+
+  &__utility {
+    width: 40%;
   }
 }
