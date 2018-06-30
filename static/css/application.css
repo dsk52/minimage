@@ -186,6 +186,7 @@ button {
   left: -100%;
   right: 0;
   bottom: 0;
+  z-index: 100;
   -webkit-transform: translate3d(0, 60px, 0);
   transform: translate3d(0, 60px, 0);
   transition: opacity 0.2s cubic-bezier(0.165, 0.84, 0.44, 1) 0s, -webkit-transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
