@@ -1,0 +1,16 @@
+.c-taxonomy-list {
+  list-style-type: none;
+  padding: 0;
+  margin-left: -1em;
+  margin-right: -1em;
+
+  &__item {
+    display: inline-block;
+    margin: 0.6em 1em;
+
+    .c-link + span {
+      margin-left: 0.3em;
+      font-size: 0.9em;
+    }
+  }
+}

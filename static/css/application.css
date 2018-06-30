@@ -288,6 +288,18 @@ button {
     .c-tag__item:last-of-type::after {
       content: ''; }
 
+.c-taxonomy-list {
+  list-style-type: none;
+  padding: 0;
+  margin-left: -1em;
+  margin-right: -1em; }
+  .c-taxonomy-list__item {
+    display: inline-block;
+    margin: 0.6em 1em; }
+    .c-taxonomy-list__item .c-link + span, .c-taxonomy-list__item .c-brand + span {
+      margin-left: 0.3em;
+      font-size: 0.9em; }
+
 .c-thumb {
   margin-top: 40px; }
   .c-thumb::after {
