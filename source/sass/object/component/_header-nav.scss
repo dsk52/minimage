@@ -1,8 +1,20 @@
-.c-header-nav {
-  &-item {
-    margin-left: 0.4em;
-    text-decoration: none;
+.c-global-nav {
+  padding-top: 40px;
+
+  &__closer {
+    text-align: right;
+  }
+
+  &__item {
+    display: block;
     transition: 0.2s $ease-out-quart 0s;
+    margin-top: 2em;
+    text-align: center;
+    font-size: 24px;
+
+    & + & {
+      margin-top: 0.8em;
+    }
 
     &:hover {
       color: lighten($color-font-base, 20%);

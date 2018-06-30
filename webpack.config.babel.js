@@ -24,14 +24,14 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      jquery: 'jquery'
-    }),
-    new webpack.optimize.UglifyJsPlugin() // 圧縮処理
+    // new webpack.ProvidePlugin({
+    //   $: 'jquery',
+    //   jQuery: 'jquery',
+    //   jquery: 'jquery'
+    // }),
+    // new webpack.optimize.UglifyJsPlugin() // 圧縮処理
   ],
-  externals: {
-    jquery: 'window.jQuery'
-  }
+  // externals: {
+  //   jquery: 'window.jQuery'
+  // }
 };

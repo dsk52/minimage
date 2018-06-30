@@ -1,8 +1,5 @@
-import sample from './_sample';
+import GlobalNav from "./GlobalNav"
 
-sample();
-
-let newFunc = (val) => {
-  console.log(val)
+window.onload = () => {
+  new GlobalNav()
 }
-newFunc('piyo');

@@ -1,0 +1,5 @@
+.c-menu {
+  &.active {
+    background-color: darken($color: #fff, $amount: 20%);
+  }
+}
