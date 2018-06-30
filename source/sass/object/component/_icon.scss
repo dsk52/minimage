@@ -11,6 +11,12 @@
   stroke-width: 0;
   stroke: currentColor;
   fill: $color-font-base;  // currentColor;
+
+  &.icon-cross,
+  &.icon-menu {
+    width: 1.5em;
+    height: 1.5em;
+  }
 }
 
 .icon-get-pocket {
