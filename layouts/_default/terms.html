@@ -1,14 +1,16 @@
 {{ define "main" }}
 
-<div class="taxonomy">
-  <ul class="taxonomy-list">
-    {{ $data := .Data }}
-    {{ range $key, $value := .Data.Terms }}
-      <li class="taxonomy-list-item">
-        <a href="/{{ $data.Plural }}/{{ $key | urlize }}">{{ $key }}</a><span>({{ len $value }})</span>
-      </li>
-    {{ end }}
-  </ul>
+<div class="p-taxonomy">
+  <div class="c-container">
+    <ul class="c-taxonomy-list">
+      {{ $data := .Data }}
+      {{ range $key, $value := .Data.Terms }}
+        <li class="c-taxonomy-list__item">
+          <a class="c-link" href="/{{ $data.Plural }}/{{ $key | urlize }}">{{ $key }}</a><span>({{ len $value }})</span>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
 </div>
 
 {{ end }}
