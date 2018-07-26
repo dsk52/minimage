@@ -13,9 +13,9 @@
   "license": "MIT",
   "description": "",
   "devDependencies": {
-    "babel-core": "^6.24.1",
+    "babel-core": "^6.26.3",
     "babel-loader": "^6.4.1",
-    "babel-preset-env": "^1.6.1",
+    "babel-preset-env": "^1.7.0",
     "babel-register": "^6.24.0",
     "cssuseragent": "^2.1.31",
     "gulp": "^3.9.1",
