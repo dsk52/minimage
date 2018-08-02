@@ -6,13 +6,28 @@ paginate = 3
 
 googleAnalytics = "Yout Google Analytics ID"
 
+theme = "minimage"
+
 [params]
   description = "Your site description"
   author = "Your Name"
   logo = '/image/logo.png'
 
 [taxonomies]
+  category = "categories"
   tag = "tags"
+
+[[menu.global]]
+    name = "Development"
+    url = "/categories/Development/"
+
+[[menu.global]]
+    name = "golang"
+    url = "/categories/golang/"
+
+[[menu.footer]]
+    name = "About"
+    url = "/page/about/"
 
 [sitemap]
   changefreq = "monthly"
