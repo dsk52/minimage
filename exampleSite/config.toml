@@ -1,5 +1,5 @@
 baseurl = "Your Site URL"
-languageCode = "Your language code"
+languageCode = "en"
 title = "Your Site Name"
 copyright = "Your Site copyright"
 paginate = 3
