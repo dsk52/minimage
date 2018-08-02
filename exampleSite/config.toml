@@ -1,11 +1,12 @@
-baseurl = "Your Site URL"
-languageCode = "Your language code"
+baseurl = "http://example.com"
+languageCode = "en"
 title = "Your Site Name"
 copyright = "Your Site copyright"
-canonifyurls = true
 paginate = 3
 
 googleAnalytics = "Yout Google Analytics ID"
+
+theme = "minimage"
 
 [params]
   description = "Your site description"
@@ -13,7 +14,20 @@ googleAnalytics = "Yout Google Analytics ID"
   logo = '/image/logo.png'
 
 [taxonomies]
+  category = "categories"
   tag = "tags"
+
+[[menu.global]]
+    name = "Development"
+    url = "/categories/Development/"
+
+[[menu.global]]
+    name = "golang"
+    url = "/categories/golang/"
+
+[[menu.footer]]
+    name = "About"
+    url = "/page/about/"
 
 [sitemap]
   changefreq = "monthly"
