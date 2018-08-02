@@ -1,4 +1,4 @@
-baseurl = "Your Site URL"
+baseurl = "http://example.com"
 languageCode = "en"
 title = "Your Site Name"
 copyright = "Your Site copyright"
