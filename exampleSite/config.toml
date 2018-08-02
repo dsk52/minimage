@@ -2,7 +2,6 @@ baseurl = "Your Site URL"
 languageCode = "Your language code"
 title = "Your Site Name"
 copyright = "Your Site copyright"
-canonifyurls = true
 paginate = 3
 
 googleAnalytics = "Yout Google Analytics ID"
