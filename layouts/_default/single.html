@@ -17,7 +17,7 @@
             {{ end }}
           </div>
           {{ if .Params.image }}
-          <div class="c-thumb c-bg-img" style="background-image: url('{{ .Params.image }}')"></div>
+          <div class="c-thumb c-bg-img" style="background-image: url('{{ .Params.image | absURL }}')"></div>
           {{ end }}
         </header>
         <div class="c-post__body">

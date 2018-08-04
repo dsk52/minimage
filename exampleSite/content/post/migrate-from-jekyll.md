@@ -5,7 +5,7 @@ menu:
   main:
     parent: tutorials
 prev: /tutorials/mathjax
-image: '/img/hot_sunny_weather.jpg'
+image: 'img/P8135669.jpg'
 title: Migrate to Hugo from Jekyll
 weight: 10
 ---

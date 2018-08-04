@@ -7,7 +7,7 @@ menu:
     parent: tutorials
 next: /tutorials/github-pages-blog
 prev: /tutorials/automated-deployments
-image: '/img/hot_sunny_weather.jpg'
+image: 'img/hot_sunny_weather.jpg'
 title: Creating a New Theme
 weight: 10
 ---
