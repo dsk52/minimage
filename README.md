@@ -4,7 +4,7 @@
 
 minimage is a [Hugo](https://gohugo.io) theme.
 
-![minimage's screenshot](https://github.com/d-kusk/minimage/blob/develop/images/screenshot.png)
+![minimage's screenshot](https://raw.githubusercontent.com/d-kusk/minimage/develop/images/screenshot.png)
 
 ## Feature
 
