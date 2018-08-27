@@ -253,7 +253,7 @@ button {
     .c-post__body img {
       width: 100%; }
     .c-post__body pre {
-      margin: 1.6rem 1.2rem;
+      margin: 1.6rem 0;
       background-color: #383737;
       padding: 1em;
       overflow: auto;
