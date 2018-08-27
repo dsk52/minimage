@@ -237,18 +237,19 @@ button {
   .c-post__body {
     margin-top: 4rem; }
     .c-post__body * + * {
-      margin-top: 0.8rem; }
+      margin-top: 0.9rem; }
     .c-post__body h2 {
-      margin-top: 2em;
-      line-height: 1.4;
+      margin-top: 2.6em;
+      line-height: 1.8;
       font-size: 1.5rem; }
     .c-post__body h3 {
-      margin-top: 1.8em;
-      line-height: 1.4;
+      margin-top: 1.6em;
+      line-height: 1.6;
       font-size: 1.4rem; }
     .c-post__body h4,
     .c-post__body h5 {
-      font-size: 1.6em; }
+      margin-top: 1.6em;
+      font-size: 1.2rem; }
     .c-post__body img {
       width: 100%; }
     .c-post__body pre {
@@ -270,6 +271,8 @@ button {
       padding: 0 1em;
       border-left: 4px solid #b9b9b9;
       color: #b9b9b9; }
+    .c-post__body p {
+      line-height: 1.8; }
     .c-post__body a {
       color: #3779cc; }
       .c-post__body a:hover {

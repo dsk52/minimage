@@ -37,24 +37,25 @@
     margin-top: 4rem;
 
     * + * {
-      margin-top: 0.8rem;
+      margin-top: 0.9rem;
     }
 
     h2 {
-      margin-top: 2em;
-      line-height: 1.4;
+      margin-top: 2.6em;
+      line-height: 1.8;
       font-size: 1.5rem;
     }
 
     h3 {
-      margin-top: 1.8em;
-      line-height: 1.4;
+      margin-top: 1.6em;
+      line-height: 1.6;
       font-size: 1.4rem;
     }
 
     h4,
     h5 {
-      font-size: 1.6em;
+      margin-top: 1.6em;
+      font-size: 1.2rem;
     }
 
     img {
@@ -86,6 +87,10 @@
       padding: 0 1em;
       border-left: 4px solid $color-medium-grey;
       color: $color-medium-grey;
+    }
+
+    p {
+      line-height: 1.8;
     }
 
     a {
