@@ -8,11 +8,11 @@ description = "It is simple, thumbnail can be set theme."
 homepage = "https://github.com/d-kusk/minimage/"
 tags = ["responsive", "simple"]
 features = ["Responsive", "Thumbnail", "JSON-LD"]
-min_version = "0.26"
+min_version = "0.53"
 
 [author]
   name = "Daisuke KONISHI"
-  homepage = "https://dasiukekonishi.com"
+  homepage = "https://daisukekonishi.com"
 
 # If porting an existing theme
 [original]
