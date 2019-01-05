@@ -1,6 +1,6 @@
 # minimage
 [![Build Status](https://travis-ci.org/d-kusk/minimage.svg?branch=develop)](https://travis-ci.org/d-kusk/minimage)
-[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/d-kusk/minimage/blob/master/LICENSE.md)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/d-kusk/minimage/blob/master/LICENSE.md)
 
 minimage is a [Hugo](https://gohugo.io) theme.
 
