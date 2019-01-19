@@ -71,15 +71,20 @@
       word-wrap: break-word;
 
       code {
+        @extend %code-base-style;
         width: 100%;
       }
     }
 
-    code {
+    %code-base-style {
       background-color: #383737;
-      padding: 0.2em 0.4em;
       font-size: 0.9em;
       color: $color-font-white;
+    }
+
+    > code {
+      @extend %code-base-style;
+      padding: 0.2em 0.4em;
     }
 
     blockquote {
