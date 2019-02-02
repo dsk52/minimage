@@ -85,8 +85,8 @@
     blockquote {
       margin: 1.6rem 1.2rem;
       padding: 0 1em;
-      border-left: 4px solid $color-medium-grey;
-      color: $color-medium-grey;
+      border-left: 4px solid darken($color-medium-grey,  10%);
+      color: darken($color-medium-grey,  10%);
     }
 
     p {
