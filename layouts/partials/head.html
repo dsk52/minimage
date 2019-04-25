@@ -11,8 +11,7 @@
   <meta name="description" content="{{ . }}"> {{ end }}
   {{ template "_internal/twitter_cards.html" . }}
   {{ template "_internal/opengraph.html" . }}
-  {{ "<!-- RSS autodiscovery -->" | safeHTML }}
-  {{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}
+
   {{ template "_internal/google_analytics.html" . }}
   {{ template "_internal/schema.html" . }}
   <link href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/5.0.0/sanitize.min.css" rel="stylesheet">
