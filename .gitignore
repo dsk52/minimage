@@ -153,3 +153,4 @@ flycheck_*.el
 .dir-locals.el
 
 
+safety-update.config.json
