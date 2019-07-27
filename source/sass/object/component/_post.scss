@@ -8,7 +8,9 @@
       color: $color-font-white;
     }
   }
+}
 
+.c-post {
   &__header {
     &--over-img {
       display: table-cell;
@@ -32,7 +34,9 @@
       font-size: 1.4rem;
     }
   }
+}
 
+.c-post {
   &__body {
     margin-top: 4rem;
 
@@ -69,6 +73,7 @@
       overflow: auto;
       white-space: pre-wrap;
       word-wrap: break-word;
+      border-radius: 5px;
 
       code {
         @extend %code-base-style;
