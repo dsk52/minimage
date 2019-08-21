@@ -4,7 +4,7 @@
   <div class="c-container">
     <ul class="c-taxonomy-list">
       {{ $data := .Data }}
-      {{ range $key, $value := .Data.Terms }}
+      {{ range $key, $value := $data.Terms }}
         <li class="c-taxonomy-list__item">
           <a class="c-link" href="/{{ $data.Plural }}/{{ $key | urlize }}">{{ $key }}</a><span>({{ len $value }})</span>
         </li>

@@ -12,6 +12,7 @@ theme = "minimage"
   description = "Your site description"
   author = "Your Name"
   logo = '/image/logo.png'
+  mainSections = ["post", "categories", "tags]
 
 [taxonomies]
   category = "categories"
