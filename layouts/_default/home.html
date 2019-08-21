@@ -1,11 +1,10 @@
 {{ define "main" }}
-  {{ $pages := .Pages }}
-  {{ $paginator := .Paginate $pages }}
+  {{ $pages := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) 5 }}
 
   <div class="p-archive">
     <div class="c-container">
       <ul class="c-archive-list">
-      {{ range $pages }}
+      {{ range $pages.Pages }}
         {{ .Render "li" }}
       {{ end }}
       </ul>
