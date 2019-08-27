@@ -3,11 +3,11 @@
   <ul class="c-pager__list">
     {{ if .Paginator.HasPrev }}
     <li class="c-pager__list__item c-pager__list__item--prev">
-      <a class="c-link" href="{{ .URL }}page/{{ .Paginator.Prev.PageNumber }}">&larr; Newer Posts</a>
+      <a class="c-link" href="{{ .Permalink }}page/{{ .Paginator.Prev.PageNumber }}">&larr; Newer Posts</a>
     </li>
     {{ end }} {{ if .Paginator.HasNext }}
     <li class="c-pager__list__item c-pager__list__item--next">
-      <a class="c-link" href="{{ .URL }}page/{{ .Paginator.Next.PageNumber }}">Older Posts &rarr;</a>
+      <a class="c-link" href="{{ .Permalink }}page/{{ .Paginator.Next.PageNumber }}">Older Posts &rarr;</a>
     </li>
     {{ end }}
   </ul>
