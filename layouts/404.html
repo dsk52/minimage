@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="p-single">
+  <div class="c-container">
+    <article class="c-post">
+      <h1 id="title">404 Page Not Found</h1>
+      <p style="margin-top: 1em;">The requested URL was not found on this server.<br>
+      The page you are looking for may be temporarily inaccessible or deleted.</p>
+      <p style="margin-top: 2em;">
+        <a class="c-link" href="{{ "/" | relURL }}">go home</a>
+      </p>
+    </article>
+  </div>
+</main>
+{{ end }}
