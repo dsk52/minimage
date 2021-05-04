@@ -10,15 +10,15 @@
     "publisher": {
       "@type": "Organization",
       "name": "{{ .Site.Params.author }}",
-      "logo": "{{ .Site.BaseURL }}{{ .Site.Params.logo }}",
+      "logo": "{{ .Site.BaseURL }}{{ .Site.Params.logo }}"
     },
     "image": "{{ .Site.BaseURL }}{{ .Params.image }}",
-    "datePublished": "{{ .Date.Format "2006-01-02" }}"
+    "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}"
   },
   "headline": "{{ substr (replace (.Content) "\n" "") 0 110 }}",
   "alternativeHeadline": "{{ .Site.Title }}",
-  "datePublished": "{{ .Date.Format "2006-01-02" }}",
-  "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
   "url": "{{ .Permalink }}",
   "wordCount": "{{ .WordCount }}",
   "author": {
