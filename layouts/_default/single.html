@@ -5,7 +5,7 @@
         <header class="c-post__header">
           <h1 class="c-post__title">{{ .Title }}</h1>
           <div class="c-post__header__meta">
-            <time class="c-pub-time" datetime="{{ .Date.Format " 2006-01-02T15:04:05Z07:00 " | safeHTML }}">
+            <time class="c-pub-time" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
               {{ .Lastmod.Format ( .Site.Params.dateformat | default "2006.01.02") }}
             </time>
             {{ if .Params.tags }}
