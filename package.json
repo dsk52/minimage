@@ -11,7 +11,7 @@
     "watch:sass": "watch 'npm run build:sass' ./source/stylesheet/",
     "watch:js": "watch 'npm run build:js' ./source/javascript/",
     "eslint": "./node_modules/.bin/eslint source/javascript/**/*.js",
-    "safetyupdate": "echo '{}' > safety-update.config.json && npx npm-safety-updater major"
+    "safetyupdate": "echo '{}' > safety-update.config.json && npx npm-safety-updater patch minor --only-dev"
   },
   "author": "Daisuke KONISHI",
   "license": "MIT",
