@@ -1,16 +1,17 @@
 import babel from 'rollup-plugin-babel'
-import uglify from 'rollup-plugin-uglify'
+import { terser } from 'rollup-plugin-terser'
 
 export default {
   input: 'source/javascript/application.js',
   output: {
     file: 'static/js/application.js',
     format: 'iife',
-    name: 'main'
+    name: 'main',
+    plugins: [terser()]
   },
   plugins: [
     babel(),
-    uglify()
+    terser()
   ],
   global: {
     // jquery: '$'  // When using jquery, it must be active.
