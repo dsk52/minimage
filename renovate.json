@@ -20,7 +20,18 @@
       "depTypeList": [
         "devDependencies"
       ],
-      "automerge": true
+      "minor": {
+        "automerge": true
+      }
+    },
+    {
+      "groupName": "linters",
+      "extends": [
+        "packages:linters"
+      ],
+      "minor": {
+        "automerge": true
+      }
     }
   ]
 }
