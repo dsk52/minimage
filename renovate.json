@@ -17,19 +17,38 @@
   },
   "packageRules": [
     {
-      "depTypeList": [
-        "devDependencies"
-      ],
-      "minor": {
-        "automerge": true
-      }
-    },
-    {
       "groupName": "linters",
       "extends": [
         "packages:linters"
       ],
-      "minor": {
+      "patch": {
+        "automerge": true
+      }
+    },
+    {
+      "groupName": "babel",
+      "matchPackagePatterns": [
+        "babel"
+      ],
+      "patch": {
+        "automerge": true
+      }
+    },
+    {
+      "groupName": "node-sass",
+      "matchPackagePatterns": [
+        "node-sass"
+      ],
+      "patch": {
+        "automerge": true
+      }
+    },
+    {
+      "groupName": "rollup",
+      "matchPackagePatterns": [
+        "rollup"
+      ],
+      "patch": {
         "automerge": true
       }
     }
