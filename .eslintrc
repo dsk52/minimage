@@ -1,3 +1,13 @@
 {
-    "extends": "standard"
+    "extends": [
+        "standard",
+        "plugin:import/errors",
+        "plugin:import/warnings"
+    ],
+    "plugins": [
+        "import"
+    ],
+    "rules": {
+        "no-new": 0
+    }
 }
